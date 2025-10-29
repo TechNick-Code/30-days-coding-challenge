@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <section id="calculator">
+        <div id="screenDisplay">
+            <input id="input" placeholder="" readonly><br>
+            <p id="answer"></p>
+        </div>
+        <div id="buttons">
+            <button class="btn"onclick="cancel('cancel')">C</button>
+            <button class="btn"onclick="del('del')">del</button>
+            <button class="btn"onclick="appendToDisplay('r')oot">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.382 4H22V6H16.618L9 21.2361L5.38197 14H2V12H6.61803L9 16.7639L15.382 4Z">
+                    </path>
+                </svg>
+            </button>
+            <button class="btn"onclick="pi('pi')">pi</button>
+            <button class="btn"onclick="appendToDisplay('7')">7</button>
+            <button class="btn"onclick="appendToDisplay('8')">8</button>
+            <button class="btn"onclick="appendToDisplay('9')">9</button>
+            <button class="btn gray"onclick="appendToDisplay('/')">/</button>
+            <button class="btn"onclick="appendToDisplay('4')">4</button>
+            <button class="btn"onclick="appendToDisplay('5')">5</button>
+            <button class="btn"onclick="appendToDisplay('6')">6</button>
+            <button class="btn gray"onclick="appendToDisplay('*')">*</button>
+            <button class="btn"onclick="appendToDisplay('1')">1</button>
+            <button class="btn"onclick="appendToDisplay('2')">2</button>
+            <button class="btn"onclick="appendToDisplay('3')">3</button>
+            <button class="btn gray"onclick="appendToDisplay('+')">+</button>
+            <button class="btn"onclick="appendToDisplay('%')">%</button>
+            <button class="btn"onclick="appendToDisplay('0')">0</button>
+            <button class="btn"onclick="appendToDisplay('.')">.</button>
+            <button class="btn gray"onclick="appendToDisplay('-')">-</button>
+            <button class="btn"onclick="appendToDisplay('(')">(</button>
+            <button class="btn"onclick="appendToDisplay(')')">)</button>
+            <button class="btn"onclick="appendToDisplay('expo')">e</button>
+            <button class="btn blue"onclick="calculate('e')quals">=</button>
+           
+
+        </section>
+
+</body>
+</html>
