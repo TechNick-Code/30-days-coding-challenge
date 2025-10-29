@@ -1,4 +1,4 @@
-const inputDisplay = document.getElementById('input');
+const inputDisplay = document.getElementById('inputDisplay');
 const answer = document.getElementById('answer');
 
 function appendToDisplay(input) {
