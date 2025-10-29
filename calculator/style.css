@@ -47,7 +47,8 @@ section {
     border: none;
     overflow-x: auto;
     white-space: nowrap;
-    background-color: rgb(26, 172, 87);
+    background-color: rgb(26, 26, 26);
+    color:white
 }
 
 ::placeholder {
