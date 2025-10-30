@@ -5,10 +5,6 @@ const grayButtons = document.querySelectorAll('.gray');
 
 function appendToDisplay(input) {
     inputDisplay.value += input;
-
-
-    grayButtons.style.color = `red
-    `;
 }
 
 function cancel() {
