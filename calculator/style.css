@@ -6,6 +6,7 @@
 
 body {
     display: flex;
+    justify-content: center;
     width: 100%;
     height: 100vh;
     background-color: #f0f0f0;
@@ -13,7 +14,7 @@ body {
 }
 
 section {
-    width: 100%;
+    width: clamp(60px, 100vw, 450px);
     height: 100vh;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -38,7 +39,7 @@ section {
 #inputDisplay {
     width: 100%;
     height: 10vh;
-    font-size: 24px;
+    font-size: 35px;
     display: flex;
     align-items: end;
     justify-content: right;
@@ -51,10 +52,6 @@ section {
     color:white
 }
 
-::placeholder {
-    color: #ffffff;
-}
-
 #input:focus {
     outline: none
 }
@@ -62,12 +59,11 @@ section {
 #answer {
     width: 100%;
     height: 10vh;
-    margin: 10px 0;
-    font-size: 30px;
+    margin-bottom: 10px;
+    font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: right;
-    padding: 5px;
     color:#f0f0f0;
 }
 
@@ -89,15 +85,12 @@ section {
     border-radius: 50px;
     font-weight:600;
     color:#2b2b2b
-    
 }
 
 .btn:hover {
     background-color: #d0d0d0;
     transition: all .1s linear;
 }
-
-
 
 svg {
     width: 20px;
@@ -116,4 +109,9 @@ svg {
 
 .gray:hover {
     background-color: #a5a5a5;
+}
+
+.gray-buttons {
+    background-color: #d61616;
+    color: white;
 }
