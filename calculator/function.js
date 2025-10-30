@@ -1,9 +1,14 @@
 const inputDisplay = document.getElementById('inputDisplay');
 const answer = document.getElementById('answer');
+const grayButtons = document.querySelectorAll('.gray');
+
 
 function appendToDisplay(input) {
     inputDisplay.value += input;
-    console.log(inputDisplay.value);
+
+
+    grayButtons.style.color = `red
+    `;
 }
 
 function cancel() {
