@@ -5,7 +5,7 @@ const decreament = document.getElementById('decreament')
 let count = 0;
 
 increament.onclick = function(){
-    countOutput.textContent = count++;
+    countOutput.textContent = ++count;
 }
 
 reset.onclick = function(){
