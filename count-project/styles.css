@@ -33,8 +33,15 @@ body {
     background-color: #d80165;
     color: white;
     transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.329);
 }
 
 .btn button:hover {
-    background-color: #a6004a;
+    background-color: #c20258;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.529);
+}
+
+.btn button:active {
+     transform: translateY(3px);
+    box-shadow: black 0px 0px 0px;
 }
