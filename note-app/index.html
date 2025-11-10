@@ -3,10 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Life saving Note</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+            <header>
+                <h1>Life Saving Note</h1>
+                <p>What do you you have in mind to write down</p>
+            </header>
+
+            <div class="control-header">
+                <input
+                    type="text" 
+                    id="noteInput"
+                    placeholder="Find notes..."
+                    class="search-note">
+                </input>
+
+                <div class="filter-note-group">
+                    <select id="filterNotes" class="filter-Notes">
+                        <option value="add notes">Add notes</option>
+                        <option value="work">Work</option>
+                        <option value="study">Study</option>
+                        <option value="business">Business</option>
+                        <option value="personal">Personal</option>
+                        <option value="personal">reminders</option>
+                    </select>
+
+                </div>
+
+                <button>
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        fill="none" 
+                        viewBox="0 0 14 14" 
+                        id="Add-1--Streamline-Core-Remix" 
+                        height="16" 
+                        width="16">
+                       
+                        <g 
+                            id="Free Remix/Interface Essential/add-1--expand-cross-buttons-button-more-remove-plus-add-+-mathematics-math">
+                            <path 
+                                id="Union" 
+                                fill="#ffffff" 
+                                fill-rule="evenodd" 
+                                d="M7.625 1c0 -0.345178 -0.27982 -0.625 -0.625 -0.625S6.375 0.654822 6.375 1v5.33496H1c-0.345178 0 -0.625 0.27982 -0.625 0.625s0.279822 0.625 0.625 0.625h5.375V13c0 0.3452 0.27982 0.625 0.625 0.625s0.625 -0.2798 0.625 -0.625V7.58496H13c0.3452 0 0.625 -0.27982 0.625 -0.625s-0.2798 -0.625 -0.625 -0.625H7.625V1Z" 
+                                clip-rule="evenodd" 
+                                stroke-width="1">\
+                            </path>
+                        </g>
+                    </svg>
+                    <div
+                        id="addNoteButton"
+                        class="addNoteButton">
+                        Add Note
+                    </div>
+                </button>
+            </div>
+            
+        </div>
+
+    <div class="note-container-grid" id="noteContainer">
+        
+    </div>
+
+    <!-- when no note, it shows this empty state -->
+        <div class="empty-state" id="emptyState">
+            <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 16 16" 
+                fill="#969696" 
+                id="Note--Streamline-Phosphor" 
+                height="50" 
+                width="50">
+                
+                <path 
+                    d="M4.73333125 5.3866625c0 -0.3608375 0.29249375 -0.65335 0.65333125 -0.65333125h5.22666875c0.50293125 0 0.81726875 0.54444375 0.5658 0.98 -0.1167 0.20213125 -0.3324 0.32665625 -0.5658 0.32666875H5.3866625c-0.3608375 0.0000125 -0.65333125 -0.2925 -0.65333125 -0.6533375Zm0.65333125 3.26666875h5.22666875c0.50293125 -0.000025 0.817275 -0.54448125 0.5657875 -0.980025 -0.11670625 -0.20211875 -0.3324 -0.32663125 -0.5657875 -0.32664375H5.3866625c-0.50293125 0.000025 -0.817275 0.54448125 -0.5657875 0.980025 0.11670625 0.20211875 0.3324 0.32663125 0.5657875 0.32664375ZM8 9.95999375H5.3866625c-0.50293125 0.000025 -0.817275 0.54448125 -0.5657875 0.980025 0.11670625 0.20211875 0.3324 0.32663125 0.5657875 0.32664375H8c0.50293125 -0.000025 0.817275 -0.54448125 0.5657875 -0.980025 -0.11670625 -0.20211875 -0.3324 -0.32663125 -0.5657875 -0.32664375ZM15.83999375 1.46666875v8.87634375c0.00110625 0.3467375 -0.13685625 0.67944375 -0.38301875 0.92365l-4.1903125 4.1903125c-0.24420625 0.2461625 -0.5769125 0.384125 -0.92365 0.38301875H1.46666875C0.74499375 15.840025 0.16 15.255 0.16 14.533325V1.46666875C0.16 0.7450125 0.7450125 0.16 1.46666875 0.16h13.06665625c0.72165625 0 1.30666875 0.5850125 1.30666875 1.30666875ZM1.46666875 14.533325h8.493325v-3.91999375c0 -0.3608375 0.2925 -0.65335 0.6533375 -0.6533375h3.91999375V1.46666875H1.46666875Zm9.79999375 -3.2666625v2.34383125l2.3430125 -2.34383125Z"
+                    stroke-width="0.0625">
+                </path>
+            </svg>
+
+            <h2>No Notes Yet</h2>
+            <p>Your notes will appear here once you add them.</p>
+            <p>Click the add button to add</p>
+        </div>
+
+
+
     <script src="function.js"></script>
 </body>
 </html>
