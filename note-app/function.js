@@ -1,4 +1,12 @@
-let fruits = ['apple', 'banana', 'cherry', 'date'];
-for (let i=0; i<fruits.length; i++){
-  console.log(fruits[2]);
+let animal = {
+  name: "goat",
+  legs: 4,
+  age: 4,
+  isMale: true,
 }
+
+setTimeout(() => {
+  console.log(animal.name);
+}, 5000);
+
+console.log("Hello world");
