@@ -9,4 +9,5 @@ setTimeout(() => {
   console.log(animal.name);
 }, 5000);
 
-console.log("Hello world");
+console.log("Hello worldly");
+log

@@ -1,0 +1,9 @@
+{
+    "editor.fontLigatures": true,
+    "editor.wordWrap": "on",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "expand",
+    "editor.cursorHeight": 0,
+    "editor.cursorStyle": "line",
+    "editor.formatOnSave": true
+}
