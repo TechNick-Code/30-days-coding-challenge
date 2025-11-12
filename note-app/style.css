@@ -6,10 +6,11 @@
 }
 
 body {
-    background-color: #f9fcff;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     height: 100vh;
+    padding: 0 15em
 }
 
 .container {
@@ -17,7 +18,7 @@ body {
     min-width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 5em;
+    gap: 3em;
     margin: 6em 0
 }
 
@@ -25,7 +26,7 @@ header {
     color: rgb(132, 17, 199);
     padding: 15px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 3.5vmin;
     font-weight: bold;
 }
 
@@ -34,20 +35,23 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
     height: auto;
     gap: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.103);
 }
 
 .search-note-input {
-    width: 50vw;
-    display: flex;
-    justify-content: center;
+    flex: 1;
     padding: 13px;
     border: 1px solid rgb(200, 200, 200);
     border-radius: 5px;
+    transition: border-color;
     
 }
+
 .search-note-input:focus {
     outline: 2px solid rgb(132, 17, 199);
 }
@@ -62,18 +66,22 @@ header {
     font-weight: 600;
 }
 
-button {
+.filter-Notes:focus {
+    outline: none;
+}
+
+.add-note-btn {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding: 13px;
+    justify-content: center;
+    gap: 5px;
+    width: 12em;
     border: none;
     border-radius: 5px;
+    align-items: center;
+    padding: 12px 0em ;
     background-color: rgb(132, 17, 199);
-    color: white;
-    cursor: pointer;
-    font-weight: 600;
+    color: white
 }
 
 .empty-state {
@@ -81,4 +89,147 @@ button {
     margin-top: 50px;
     color: hsl(0, 0%, 59%);
 
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    display: flex;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+    visibility: visible;
+    opacity: 1
+}
+
+.modal {
+    background: white;
+    padding: 3em 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-modal-head {
+    margin-bottom: 1em;
+}
+
+.new-note-head {
+    margin-bottom: 1.5em;
+    color: rgb(132, 17, 199);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.form-label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+#noteTitleInput {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#noteTextArea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.modal-actions {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* .tag-container {
+    width: 100%;
+    display: flex;
+} */
+
+.tag-container span {
+    background-color: #ab38ee4b;
+    display: flex;
+    align-items: center;
+    color: #8411c7;
+    padding: 1em 1em;
+    border-radius: 12em;
+    font-size: 0.9rem;
+}
+
+.tag-container svg {
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    fill: white;
+    margin-right: 8px;
+}
+
+.save-button {
+    background-color: rgb(132, 17, 199);
+    color: white;
+    padding: 1.2em 3em
+}
+
+.cancel-button {
+    background-color: rgb(200, 200, 200);
+    color: rgb(36, 36, 36);
+    padding: 1.2em 3em
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 1em;
+    }
+    header {
+        font-size: 4.5vmin
+    }
+
+    .control-header {
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .search-note-input {
+        width: 100%;
+    }
+
+    .filter-Notes {
+        width: 100%;
+    }
+
+    .add-note-btn {
+        width: ;
+    }
+
+    .modal {
+        width: 90%;
+    }
 }
