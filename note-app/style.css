@@ -36,7 +36,6 @@ header {
 
 .control-header {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     height: auto;
     gap: 10px;
@@ -272,11 +271,9 @@ header {
         padding: 3em 2em;
     }
 
-    /* .control-header {
-        display: grid;
-        grid-row: 1fr auto auto;
-        gap: 1em;
-    } */
+    .control-header {
+       flex-wrap: wrap;
+    }
 
     .search-note-input {
         width: 100%;
